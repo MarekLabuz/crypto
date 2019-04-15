@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="http://mareklabuz.github.io/crypto/index.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="http://mareklabuz.github.io/crypto/icon.png" />
+  <title>Crypto Toolkit</title>
+  <style>
+    .container {
+      position: relative;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      top: 100px;
+      padding-bottom: 20px;
+    }
+
+    .screens {
+      display: flex;
+      position: relative;
+      flex-wrap: wrap;
+      z-index: 500;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .screens p {
+      display: block;
+      text-align: center;
+      width: 350px;
+      padding: 0 10%;
+      box-sizing: border-box;
+      height: 70px;
+    }
+
+    .screens img {
+      transform: scale(0.5);
+      position: absolute;
+    }
+
+    .x {
+      width: 350px;
+      height: 700px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media (max-width: 500px) {
+      .screens img {
+        transform: scale(0.4);
+        position: absolute;
+      }
+
+      .x {
+        height: 600px;
+      }
+
+      .container {
+        top: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="image">
+      <img src="http://mareklabuz.github.io/crypto/logo.png" />
+      <span>Crypto Toolkit</span>
+    </div>
+  </div>
+  <div class="container">
+    <div class="screens">
+      <div>
+        <div class="x"><img src="http://mareklabuz.github.io/crypto/x1.png" /></div>
+        <p>Add all your favourite cryptocurrencies to handy screen showing current prices.</p>
+      </div>
+      <div>
+        <div class="x"><img src="http://mareklabuz.github.io/crypto/x2.png" /></div>
+        <p>View detailed information about cryptocurrencies as well as line and candlestick charts</p>
+      </div>
+      <div>
+        <div class="x"><img src="http://mareklabuz.github.io/crypto/x3.png" /></div>
+        <p>Control your income with the automatic calculations based on a current price and the price from the past.</p>
+      </div>
+    </div>
+    <footer>© 2018 Marek Łabuz</footer>
+  </div>
+</body>
+</html>
